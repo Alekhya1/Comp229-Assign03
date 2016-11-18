@@ -1,7 +1,24 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Comp229_Assign03.About" %>
+﻿<%@ Page Title="Student Info" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Comp229_Assign03.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
     <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <p>StudentID</p>
+    <p><asp:TextBox ID="StudentID" runat="server" ValidationGroup=""></asp:TextBox>
+    <asp:RequiredFieldValidator ID="StudentIDReq" runat="server" controltovalidate="StudentID">
+   </asp:RequiredFieldValidator></p>
+    <p> LastName</p>
+    <p><asp:TextBox ID="LastName" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="LastNameReq" runat="server" controltovalidate="LastName">
+   </asp:RequiredFieldValidator></p>
+    <p>FirstMidName</p>
+    <p>  <asp:TextBox ID="FirstMidName" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="FirstNameReq" runat="server" controltovalidate="FirstMidName">
+   </asp:RequiredFieldValidator></p>
+    <p>EnrollmentDate</p>
+     <p><asp:TextBox ID="EnrollmentDate" runat="server"></asp:TextBox>
+     <asp:RequiredFieldValidator ID="EnrollmentDateReq" runat="server" controltovalidate="EnrollmentDate">
+   </asp:RequiredFieldValidator>
+    </p>
+   
 </asp:Content>
