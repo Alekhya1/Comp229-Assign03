@@ -52,6 +52,7 @@ namespace Comp229_Assign03
         {
             if (!IsPostBack)
             {
+
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;

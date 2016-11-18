@@ -1,42 +1,45 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Comp229_Assign03._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:Label ID="employeesLabel" runat="server" />
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+    <div class="background">
+        <div class="Jumbotron">
+            <h1>A's School Of Business</h1>
+            <h5>A perfect place to start with your career</h5>
+            </div>
+            <div class="Jumbotron">
+                <p>
+                    <a href="http://localhost:58731/" class="btn btn-primary btn-lg">About&raquo;</a>
+                    <a href="http://localhost:58731/" class="btn btn-primary btn-lg">Speak to Staff &raquo;</a>
+                    <a href="http://localhost:58731/" class="btn btn-primary btn-lg">Alumini &raquo;</a>
+                    <a href="http://localhost:58731/" class="btn btn-primary btn-lg">Register &raquo;</a>
+                </p>
+            </div>
+            <p class="lead">A's School Of Business is a place for building great personality and Knowledge in management workplace.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
 
+                <h2>Student Page</h2>
+
+                <asp:DataList ID="DataList" runat="server" Height="133px" Width="266px">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="link" runat="server" HeaderText="LinkButton" Text='<%# Eval("FirstMidName") %>' PostBackUrl="~/About.aspx"></asp:LinkButton>
+                        <br />
+                    </ItemTemplate>
+                </asp:DataList>
+
+                <h3>Interested candidates can register here.</h3>
+
+                <p>
+                    <a class="btn btn-default" href="http://localhost:58731/About">Register &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+   
 </asp:Content>
+
