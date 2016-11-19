@@ -20,6 +20,25 @@ namespace Comp229_Assign03
                     BindData();
                 }
             }
+           
+            if (PreviousPage != null)
+            {
+                TextBox SourceTextBox =
+                    (TextBox)PreviousPage.FindControl("LastName");
+                if (SourceTextBox != null)
+                {
+                   label1.Text = SourceTextBox.Text;
+                }
+            }
+            if (PreviousPage != null)
+            {
+                TextBox SourceTextBox =
+                    (TextBox)PreviousPage.FindControl("FirstMidName");
+                if (SourceTextBox != null)
+                {
+                    label1.Text = SourceTextBox.Text;
+                }
+            }
         }
 
 

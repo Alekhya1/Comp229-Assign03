@@ -37,7 +37,7 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
+        
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -78,7 +78,11 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                 <div>
+              <a href="https://privacy.microsoft.com/en-us/privacystatement" />
+            </div>
+                <p>  Privacy Policy</p>
+                <p>&copy; <%: DateTime.Now.Year %> - A's Business Scool</p>
             </footer>
         </div>
     </form>

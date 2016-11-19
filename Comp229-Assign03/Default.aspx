@@ -2,7 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Label ID="employeesLabel" runat="server" />
-
+    
+    <asp:Label ID="label1" runat="server" />
     <div class="background">
         <div class="Jumbotron">
             <h1>A's School Of Business</h1>
@@ -16,6 +17,7 @@
                     <a href="http://localhost:58731/" class="btn btn-primary btn-lg">Register &raquo;</a>
                 </p>
             </div>
+        
             <p class="lead">A's School Of Business is a place for building great personality and Knowledge in management workplace.</p>
         </div>
         <div class="row">
@@ -26,8 +28,8 @@
 
                 <asp:DataList ID="DataList" runat="server" Height="133px" Width="266px">
                     <ItemTemplate>
-                        <asp:LinkButton ID="link" runat="server" HeaderText="LinkButton" Text='<%# Eval("FirstMidName") %>' PostBackUrl="~/About.aspx"></asp:LinkButton>
-                        <br />
+                 <asp:LinkButton ID="link" runat="server" HeaderText="LinkButton" Text ='<%#string.Format("{0} {1}", Eval("FirstMidName"),Eval("LastName")) %>' PostBackUrl='<%# Eval("StudentID", "~/About.aspx?ID={0}")%>'></asp:LinkButton>
+                                           
                     </ItemTemplate>
                 </asp:DataList>
 
@@ -40,6 +42,7 @@
             <div class="col-md-4">
             </div>
         </div>
-   
+    <!--Microsoft privacy statement is used in this code-->
+     <a href="https://privacy.microsoft.com/en-us/privacystatement" />
 </asp:Content>
 

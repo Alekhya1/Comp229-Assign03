@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="Student Info" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Comp229_Assign03.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <asp:Label ID="label1" runat="server" />
     <h2><%: Title %>.</h2>
     <p>StudentID</p>
-    <p><asp:TextBox ID="StudentID" runat="server" ValidationGroup=""></asp:TextBox>
+    <p><asp:TextBox ID="StudentID" runat="server" ></asp:TextBox>
     <asp:RequiredFieldValidator ID="StudentIDReq" runat="server" controltovalidate="StudentID">
    </asp:RequiredFieldValidator></p>
     <p> LastName</p>
@@ -17,8 +17,12 @@
    </asp:RequiredFieldValidator></p>
     <p>EnrollmentDate</p>
      <p><asp:TextBox ID="EnrollmentDate" runat="server"></asp:TextBox>
-     <asp:RequiredFieldValidator ID="EnrollmentDateReq" runat="server" controltovalidate="EnrollmentDate">
-   </asp:RequiredFieldValidator>
+     <asp:RequiredFieldValidator ID="EnrollmentDateReq" runat="server" controltovalidate="EnrollmentDate"></asp:RequiredFieldValidator>
     </p>
-   
-</asp:Content>
+    <p style="color: #FFFFFF">Courses</p>    
+    <p><asp:DropDownList ID="Courses" runat="server"  ValidateRequestMode="Enabled"></asp:DropDownList></p>    
+    <p><asp:Button ID="Buton" OnClick="Page_Load" Text="Delete" runat="server" href="http://localhost:58731" class="btn btn-primary btn-lg"></asp:Button></p>
+<p><b><a href="Student.aspx" >Update</a></b></p>
+         </asp:Content>
+ 
+       

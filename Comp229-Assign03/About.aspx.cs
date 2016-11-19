@@ -11,7 +11,16 @@ namespace Comp229_Assign03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (PreviousPage  != null)
+            {
+                Control placeHolder =
+                    PreviousPage.Controls[0].FindControl("ContentPlaceHolder1");
+                TextBox SourceTextBox = (TextBox)placeHolder.FindControl("LastName");
+                if (SourceTextBox != null)
+                {
+                    label1.Text = SourceTextBox.Text;
+                }
+            }
         }
     }
 }
