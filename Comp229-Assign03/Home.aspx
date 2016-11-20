@@ -1,8 +1,7 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Comp229_Assign03._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Comp229_Assign03._Home" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="employeesLabel" runat="server" />
-    
+        
     <asp:Label ID="label1" runat="server" />
     <div class="background">
         <div class="Jumbotron">
@@ -24,7 +23,7 @@
             <div class="col-md-4">
 
 
-                <h2>Student Page</h2>
+                <h2>Click on student's name access Student details</h2>
 
                 <asp:DataList ID="DataList" runat="server" Height="133px" Width="266px">
                     <ItemTemplate>
@@ -36,7 +35,7 @@
                 <h3>Interested candidates can register here.</h3>
 
                 <p>
-                    <a class="btn btn-default" href="http://localhost:58731/About">Register &raquo;</a>
+                    <a class="btn btn-default" href="http://localhost:58731/Register">Register &raquo;</a>
                 </p>
             </div>
             <div class="col-md-4">

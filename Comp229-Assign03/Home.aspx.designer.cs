@@ -10,16 +10,7 @@
 namespace Comp229_Assign03 {
     
     
-    public partial class _Default {
-        
-        /// <summary>
-        /// employeesLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label employeesLabel;
+    public partial class _Home {
         
         /// <summary>
         /// label1 control.

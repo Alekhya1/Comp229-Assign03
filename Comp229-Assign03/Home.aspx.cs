@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Comp229_Assign03
 {
-    public partial class _Default : Page
+    public partial class _Home : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

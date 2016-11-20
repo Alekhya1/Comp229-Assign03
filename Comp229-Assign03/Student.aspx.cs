@@ -12,6 +12,7 @@ namespace Comp229_Assign03
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             string id = Request.QueryString["ID"];
             int studentid = Convert.ToInt32(id);
             StudentID.Text = studentid.ToString();
@@ -67,7 +68,7 @@ namespace Comp229_Assign03
                 connection.Close();
             }
 
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Home.aspx");
         }
 
         protected void Delete_Click(object sender, EventArgs e)
@@ -92,7 +93,8 @@ namespace Comp229_Assign03
             {
                 connection.Close();
             }
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Home.aspx");
+
         }
     }
 

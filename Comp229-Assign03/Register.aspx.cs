@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace Comp229_Assign03
 {
-    public partial class About : Page
+    public partial class Register : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,7 +46,7 @@ namespace Comp229_Assign03
             {
                 connection.Close();
             }
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Home.aspx");
             }
     }
     }

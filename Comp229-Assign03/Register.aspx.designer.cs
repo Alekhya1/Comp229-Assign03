@@ -10,7 +10,7 @@
 namespace Comp229_Assign03 {
     
     
-    public partial class About {
+    public partial class Register {
         
         /// <summary>
         /// label1 control.
