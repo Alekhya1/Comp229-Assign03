@@ -28,7 +28,7 @@
 
                 <asp:DataList ID="DataList" runat="server" Height="133px" Width="266px">
                     <ItemTemplate>
-                 <asp:LinkButton ID="link" runat="server" HeaderText="LinkButton" Text ='<%#string.Format("{0} {1}", Eval("FirstMidName"),Eval("LastName")) %>' PostBackUrl='<%# Eval("StudentID", "~/About.aspx?ID={0}")%>'></asp:LinkButton>
+                 <asp:LinkButton ID="link" runat="server" HeaderText="LinkButton" Text ='<%#string.Format("{0} {1}", Eval("FirstMidName"),Eval("LastName")) %>' PostBackUrl='<%# Eval("StudentID", "~/Student.aspx?ID={0}")%>'></asp:LinkButton>
                                            
                     </ItemTemplate>
                 </asp:DataList>

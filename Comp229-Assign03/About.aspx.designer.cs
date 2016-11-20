@@ -22,24 +22,6 @@ namespace Comp229_Assign03 {
         protected global::System.Web.UI.WebControls.Label label1;
         
         /// <summary>
-        /// StudentID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StudentID;
-        
-        /// <summary>
-        /// StudentIDReq control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator StudentIDReq;
-        
-        /// <summary>
         /// LastName control.
         /// </summary>
         /// <remarks>
@@ -103,12 +85,12 @@ namespace Comp229_Assign03 {
         protected global::System.Web.UI.WebControls.DropDownList Courses;
         
         /// <summary>
-        /// Buton control.
+        /// Add control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Buton;
+        protected global::System.Web.UI.WebControls.Button Add;
     }
 }
